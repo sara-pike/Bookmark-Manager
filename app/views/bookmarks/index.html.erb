@@ -1,0 +1,28 @@
+<div class="content-wrap">
+
+  <h1>Paperclips...<br/>Beautiful Bookmarks</h1>
+
+  <section class="bookmarks">
+    <% @bookmarks.each do |bookmark| %>
+      <%= link_to bookmark.url do %>
+
+        <div class="bookmark">
+          <div class="url">
+            <h2><%= bookmark.title %></h2>
+            <p class="description"><%= bookmark.description %></p>
+          </div>
+          <p class="uploader"><%= bookmark.uploader %></p>
+        </div>
+
+      <% end %>
+    <% end %>
+  </section>
+
+</div>
+
+
+
+<%#= link_to 'New Bookmark', new_bookmark_path %>
+<%#= link_to 'Show', bookmark %>
+<%#= link_to 'Edit', edit_bookmark_path(bookmark) %>
+<%#= link_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %>

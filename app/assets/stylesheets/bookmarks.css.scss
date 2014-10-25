@@ -1,0 +1,63 @@
+// Place all the styles related to the bookmarks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+body {
+  font-family: 'Cutive Mono', monospace;
+  background: url('http://fc01.deviantart.net/fs28/i/2008/056/7/3/Squared_paper_sheet_by_AnnFrost_stock.jpg') top left fixed;
+  letter-spacing:-2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+.content-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.bookmark {
+  @extend .group;
+  width: 100%;
+  margin-bottom: 40px;
+  background: rgba(205, 180, 160, 0.9);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.url {
+  float: left;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #F8F6F7;
+    letter-spacing:-1px;
+  font-weight: 400;
+
+    a {
+      color: inherit;
+    }
+  }
+  .description {
+    margin: 0;
+    color: #7a7a7a;
+  }
+}
+
+.uploader {
+  float: right;
+  font-style: italic;
+}
+
+.group {
+  display: table;
+  content: "";
+  clear: both;
+}
